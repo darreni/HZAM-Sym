@@ -1,4 +1,4 @@
-# HZAM-Sym_release_1.0_Lake_betaV1.1_MAIN.R
+# HZAM-Sym_release_1.0.R
 # Hybrid Zone Assortative Mating (HZAM) model
 # To model the effects of assortative mating and low hybrid fitness on hybrid zone width, stability, and dynamics.
 
@@ -20,8 +20,7 @@
 
 # HZAM-Sym is presented in the following manuscript:
 
-# Irwin, D., and D. Schluter. 2021. Hybridization and the coexistence of species. bioRxiv ADD INFO HERE. ##########################################
-#######################
+# Irwin, D., and D. Schluter. 2021. Hybridization and the coexistence of species. bioRxiv.
 
 # You are welcome to use and modify this script. If you do, please cite the manuscript above.
 
