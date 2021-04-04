@@ -20,7 +20,7 @@
 
 # HZAM-Sym is presented in the following manuscript:
 
-# Irwin, D., and D. Schluter. 2021. Hybridization and the coexistence of species. bioRxiv.
+# Irwin, D., and D. Schluter. 2021. Hybridization and the coexistence of species. bioRxiv 2021.04.04.438369; doi: https://doi.org/10.1101/2021.04.04.438369
 
 # You are welcome to use and modify this script. If you do, please cite the manuscript above.
 
