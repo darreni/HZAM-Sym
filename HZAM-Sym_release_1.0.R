@@ -1,8 +1,9 @@
 # HZAM-Sym_release_1.0.R
-# Hybrid Zone Assortative Mating (HZAM) model
-# To model the effects of assortative mating and low hybrid fitness on hybrid zone width, stability, and dynamics.
+# Hybrid Zone Assortative Mating model, in sympatry with ecological differentiation.
+# To model the effects of assortative mating, low hybrid fitness, and ecological differentiation on species coexistence.
 
-# The first version of HZAM code was originally released by Darren Irwin, November 2019, University of British Columbia, Biodiversity Research Centre and Dept. of Zoology.
+# This software is a major modification and extension of the original HZAM code
+# that was originally released by Darren Irwin, November 2019, University of British Columbia, Biodiversity Research Centre and Dept. of Zoology.
 # That version was presented in the following paper, and is available at the associated Dryad archive listed below:
 
 # Data produced using the original HZAM script is presented in the following paper: 
@@ -10,7 +11,8 @@
 
 # Irwin, Darren (2019), Assortative mating in hybrid zones is remarkably ineffective in promoting speciation, Dryad, Dataset, https://doi.org/10.5061/dryad.k98sf7m30
 
-# The present script, called HZAM-Sym, is a non-spatial (i.e., purely sympatric) model of interactions 
+# The present script, called HZAM-Sym, is a major modification of HZAM with substantial changes:
+# This version models a non-spatial (i.e., purely sympatric) model of interactions 
 # of two populations that have just come into contact, e.g. in a single lake or other habitat patch. 
 # This means: 
 # no dispersal curve (random uniform distribution of offspring "positions").
