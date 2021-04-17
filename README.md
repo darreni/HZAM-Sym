@@ -1,9 +1,9 @@
-# HZAM-Sym
+# HZAM-Sym: 
 The Hybrid Zone with Assortative Mating model, in full sympatry with ecological differentiation (HZAM-Sym)
 
 This repository contains the R code used in this manuscript:
 
-Irwin, D., and Schluter, D. 2021. Hybridization and the coexistence of species. bioRxiv.
+Irwin, D., and Schluter, D. 2021. Hybridization and the coexistence of species. bioRxiv. https://doi.org/10.1101/2021.04.04.438369
 
 The code for running HZAM-Sym simulations and the code for making the figures in the paper are both included in this file: HZAM-Sym_release_1.0.R
 
