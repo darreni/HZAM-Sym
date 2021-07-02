@@ -69,7 +69,12 @@ colorBlindBlackPlasma41 <- c("black", plasma(40))
 # To run multiple replicates of the whole set, use this:
 replications <- 1:5   # or just 1 for 1 replicate, or something like (2:5) to add replicates after 1 is done
 
-set_name <- "setA"  # provide a name for this set of runs, which will be in the filenames
+set_name <- "runB"  # provide a name for this set of runs, which will be in the filenames
+# original set in the bioRxiv version of the paper is "runA"
+# in response to reviews, adding more simulation conditions, under name "runB"
+# 1) with epistasis rather than heterozygote disadvantage--added this to the saved filenames: fitMethod2 = epistasis, with beta as listed
+#                                                                                             fitMethod1 = heterozygote disadvantage (with beta ignored)
+
 
 for (individual_replicate in replications) {
   
@@ -146,7 +151,7 @@ for (individual_replicate in replications) {
   
   max_generations <- 1000;  # the time at which the simulation will stop 
   
-  do_plot <- T # whether to do plot during sims
+  do_plot <- F # whether to do plot during sims
   plot_MTL <- F  # whether to plot Mating Trait Loci
   plot_UDL <- T  # whether to plot UnderDominant Loci (these were the loci shown / modeled in the paper, and they are also Mating Trait Loci)
   plot_NL <- F  # whether to plot Neutral Loci  
@@ -170,7 +175,7 @@ for (individual_replicate in replications) {
   cline <- "UDL and NL"  # choose UDL or MTL or "UDL and NL" (for two clines)
   width_method <- "eightieth"   # choose "tangent" or "eightieth" percentile in middle  ("tangent" may not work well)
   
-  survival_fitness_method <- 1  # option 1: underdominance only; option 2: epistasis (model of Barton & Gale 1993, Fig. 2-2) 
+  survival_fitness_method <- 2  # option 1: underdominance only; option 2: epistasis (model of Barton & Gale 1993, Fig. 2-2) 
   beta <- 1  # Applies only if option 2 above: The beta value in the epistatic fitness equation: w(x) = 1 - s(4x[1-x])^beta
   
   range_limit_left <- 0   # in HZAM-Sym, non-spatial, this should always be 0
@@ -250,7 +255,7 @@ for (individual_replicate in replications) {
         mating_grouping_movement_ratio <- mating_grouping_movement_ratio_set[pref_ratio_case]
       }
 
-      run_name <- paste0("HZAM_animation_run",run_set_name,"_growthrate",growth_rate,"_ecolDiff",ecolDiff,"_K",K,"_UDLMTL",male_trait_loci,"_gen",max_generations,"_hybridfitness",hybrid_fitness,"_prefratio",pref_ratio)
+      run_name <- paste0("HZAM_animation_run",run_set_name,"_fitMethod",survival_fitness_method,"_beta",beta,"_growthrate",growth_rate,"_ecolDiff",ecolDiff,"_K",K,"_UDLMTL",male_trait_loci,"_gen",max_generations,"_hybridfitness",hybrid_fitness,"_prefratio",pref_ratio)
       
       if (pref_ratio == 1) {  # this bit needed for calculation of pref_SD below, to avoid error when pref_ratio equals 1 or 0
         pref_ratio_for_math <- 1 - 10^(-15)  # very very close to 1
